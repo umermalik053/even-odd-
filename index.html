@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>even odd number</title>
+</head>
+<body>
+    <center>    <h1>even odd number </h1>
+    </center>
+
+    <form onsubmit="doEven(); return false">
+        <input type="number" name="" id="num1">
+        <!-- <input type="number" name="" id="num2" /> -->
+        <button type="submit">Solve</button>
+      </form>
+     <h2 id="show"></h2>
+     <script>
+        
+        function doEven()
+         {
+            let num1 = +document.querySelector('#num1').value
+            // let num2 = +document.querySelector('#num2').value
+            let show = document.querySelector('#show')
+            let result = num1%2
+            console.log(result);
+            // console.log(num1%2);
+            if (result) {
+                show.innerHTML = num1 + ' is odd number'
+
+            } else {
+                show.innerHTML = num1 + ' is Even number'
+            }
+        }
+    
+
+     </script>
+    
+</body>
+</html>
