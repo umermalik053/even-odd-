@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checking even odd</title>
+</head>
+<body>
+    <h1>checking even odd number</h1>
+    <form onsubmit="doEven();return false">
+    <input type="number" id="num1" placeholder="check now enter number">
+    <br>
+    <button type="submit">click</button>
+    </form>
+    <h2 id="show"></h2>
+    <script>
+        function doEven()
+         {
+           let num1= +document.querySelector('#num1').value; 
+           let show= document.querySelector("#show")
+           let result= num1%2
+           console.log(result)
+           if (result){
+            show.innerHTML= 'This is odd number'
+           }
+           else{
+            show.innerHTML= 'this is even number'
+           }
+
+         }
+
+    </script>
+
+
+</body>
+</html>

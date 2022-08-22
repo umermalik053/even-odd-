@@ -6,16 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>even odd number</title>
 </head>
-<body>
-    <center>    <h1>even odd number </h1>
-    </center>
+<body id="dis">
+    <style>
+       #dis{
+        background-color: brown;
+       }
+       #background{
+            background-color: aquamarine;
+            ;
+        }
+        #res {
+background-color: rgb(173, 117, 224);
 
-    <form onsubmit="doEven(); return false">
+        }
+        #ty{
+          color: rgb(0, 0, 0);
+        }
+        #show{
+            background-color: rgb(238, 227, 227);
+            border-radius: 5mm;
+            border: 50ch;
+        }
+    </style>
+    <center>    <h1 id="res">Even Odd Number </h1>
+    
+
+    <form id="background" onsubmit="doEven(); return false">
         <input type="number" name="" id="num1">
         <!-- <input type="number" name="" id="num2" /> -->
-        <button type="submit">Solve</button>
+        <button id="ty"  type="submit">Solve</button>
       </form>
      <h2 id="show"></h2>
+     </Center>
      <script>
         
         function doEven()
