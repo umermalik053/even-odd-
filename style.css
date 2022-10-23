@@ -1,0 +1,48 @@
+body{
+    background-image: url(./evenodd.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    font-size: 40px;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-variant: small-caps;
+
+}
+input{
+    width: 70%;
+    padding: 3%;
+    border-radius: 15%;
+    border-color: brown;
+    border-width: 10px;
+    
+}
+button{
+    margin-top: 15px;
+    padding: 2%;
+    width: 40%;
+    border-radius: 20%;
+    border-color: black;
+    border-width: 10px;
+    background-color: black;
+    color: white;
+    font-size: 30px;
+    
+
+}
+#show{
+    color: white;
+    background-color: black;
+    font-size: 30px;
+}
+input:hover{
+    background-color: aquamarine;
+}
+button:hover{
+    color: black;
+    background-color: white;
+    cursor: alias ;
+
+}
